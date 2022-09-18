@@ -17,7 +17,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
 		<title>Студія</title>
 	</head>
 	<body>
@@ -25,43 +26,42 @@
 		<header class="header">
 			<!-- навігація -->
 			<div class="container">
-				<div class="flex-ability">
-					<nav class="flex-ability main-nav">
-						<a href="./index.html" class="logo"> <span class="logo-el">Web</span>Studio</a>
-						<ul class="flex-ability list">
-							<li class="item">
-								<a href="./index.html" class="link current">Студія</a>
+					<nav class="nav">
+						<a href="./index.html" class="logo"> <span class="logo__element">Web</span>Studio</a>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="./index.html" class="link link--current nav__link ">Студія</a>
 							</li>
-							<li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-							<li class="item"><a href="" class="link">Контакти</a></li>
+							<li class="nav__item"><a href="./portfolio.html" class="link nav__link">Портфоліо</a></li>
+							<li class="nav__item"><a href="" class="link nav__link">Контакти</a></li>
 						</ul>
-					</nav>
 
-					<!-- контакти -->
-
-					<ul class="flex-ability auth-list list">
-						<li class="item flex-ability">
-							<a href="mailto:info@devstudio.com" class="header-text link">
-								<svg class="icon-svg">
+						<ul class="header__list">
+						<li class="header__item">
+							<a href="mailto:info@devstudio.com" class="link header__link">
+								<svg class="header__icon">
 									<use href="./images/symbol-defs.svg#icon-envelope" Width="16px" Height="12px"></use>
 								</svg>
 
 								info@devstudio.com
 							</a>
 						</li>
-						<li class="item">
-							<a href="tel:+380961111111" class="header-text link">
-								<svg class="icon-svg smartphone">
+						<li class="header__item">
+							<a href="tel:+380961111111" class="link header__link">
+								<svg class="header__icon header__icon--smartphone">
 									<use href="./images/symbol-defs.svg#icon-smartphone" Width="10px" Height="16px"></use></svg
 								>+38 096 111 11 11</a
 							>
 						</li>
 					</ul>
+					</nav>
+
+					<!-- контакти -->
+
+					
 				</div>
 			</div>
 		</header>
-
-		<!-- унікальний контент -->
 		<main>
 			<!-- герой -->
 			<section class="background-hero section overlay">
@@ -482,6 +482,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
