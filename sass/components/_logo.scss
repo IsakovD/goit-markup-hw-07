@@ -12,5 +12,11 @@
     &__element {
         color: $color-accent;
     }
+
+    &--inversion {
+        color: $color-white;
+        margin: 0;
+        padding: 0;
+    }
 }
 
